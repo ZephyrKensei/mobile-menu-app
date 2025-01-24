@@ -1,0 +1,123 @@
+:root {
+  --ff-prim: "Norse", serif;
+  --ff-sec: "Raleway", serif;
+
+  --fw-reg: 400;
+  --fw-bold: 700;
+
+  --color-white: #fff;
+  --color-dark: #171717;
+  --color-secondary: #383433;
+  --color-light: #3999089;
+  --color-accent1: #ffa050;
+  --color-accent2: #b99a7e;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+  --size10: 0.625rem;
+  --size14: 0.875rem;
+  --size16: 1rem;
+  --size18: 1.125rem;
+  --size20: 1.25rem;
+  --size30: 1.875rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 8rem;
+    --fs-h2: 3rem;
+    --fs-h3: 2.5rem;
+    --fs-h4: 1.5rem;
+    --fs-body: 1.125rem;
+  }
+}
+
+/* General styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-sec);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-reg);
+  line-height: 1.6;
+  letter-spacing: 0;
+  background: var(--color-dark);
+  color: var(--color-white);
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Buttons */
+
+.btn {
+  display: inline-block;
+  padding: 1em;
+  background: var(--color-accent1);
+  color: var(--color-dark);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  line-height: 1;
+  font-family: "Norse", Verdana, sans-serif;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+h4 {
+  font-size: var(--fs-h4);
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+}

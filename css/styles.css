@@ -1,3 +1,45 @@
+/* Intro Page */
+.hero-intro {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+}
+
+.title {
+  margin-top: 35%;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.name {
+  font-family: var(--ff-prim);
+  font-size: var(--fs-h1);
+  margin: 5px auto;
+}
+
+.intro-img {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.intro-img::before {
+  content: "";
+  position: absolute;
+  left: -6.1em;
+  top: 50%;
+  transform: translateY(-50%) rotate(-20deg);
+  background: var(--color-dark);
+  width: 40%;
+  height: 140%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
 /* header */
 header {
   display: flex;

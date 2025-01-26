@@ -9,15 +9,16 @@
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   margin: auto;
 }
 
 .name {
   font-family: var(--ff-prim);
   font-size: var(--fs-h1);
-  margin: 5px auto;
+  text-transform: uppercase;
+  margin: 12px auto;
 }
 
 .hero {
@@ -47,10 +48,15 @@
   background-attachment: fixed;
 }
 
-.intro-img {
-  max-width: 100%;
-  height: 500px;
-  overflow: hidden;
+.hero-intro .btn {
+  font-size: var(--size16);
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 150px;
+  border-radius: 30px;
 }
 
 /* header */

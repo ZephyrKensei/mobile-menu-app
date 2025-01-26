@@ -99,7 +99,6 @@ a {
   font-size: 0.8rem;
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
-  transition: transform 200ms ease-in-out;
 }
 
 /* Typography */

@@ -59,6 +59,11 @@ body {
   color: var(--color-white);
   margin: 0;
   padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
 }
 
 section {
@@ -71,7 +76,7 @@ section {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 ul {

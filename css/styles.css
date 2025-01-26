@@ -1,17 +1,7 @@
 /* Intro Page */
-
-.container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  align-items: center;
-}
 .hero-intro {
-  margin: 0;
   padding: 0;
   text-align: center;
-  position: relative;
 }
 
 .title {
@@ -30,9 +20,36 @@
   margin: 5px auto;
 }
 
+.hero {
+  height: 60vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.bg-img-wrapper {
+  transform: skewY(26deg);
+  position: absolute;
+  top: -10px;
+  bottom: 60px;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.bg-img {
+  background: url("../assets/imgs/welcome.jpg") right no-repeat;
+  position: absolute;
+  top: 70px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  transform: skewY(-9deg);
+  background-attachment: fixed;
+}
+
 .intro-img {
   max-width: 100%;
-  height: auto;
+  height: 500px;
   overflow: hidden;
 }
 

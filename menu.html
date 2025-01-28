@@ -2,10 +2,7 @@
 <html lang="en">
   <head>
     <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-    />
+    <script src="https://kit.fontawesome.com/07f086a7e6.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,9 +18,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <!-- CSS -->
-    <link rel="stylesheet" href="css/defaults.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="./css/defaults.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
     <!-- Title -->
     <title></title>
   </head>
@@ -51,15 +47,51 @@
         </nav>
       </header>
 
-      <!-- Main -->
-      <section class="hero-section" id="tab-bio"></section>
+      <!-- Menu -->
+       <main class="site-wrapper">
+        <!-- Menu Search & Nav -->
+        <section class="menu">
+          <div class="menu-title">
+            <img src="assets/imgs/logo.png" alt="logo" class="logo" />
+            <h2 class="menu-name">Menu</h2>
+            <p class="menu-slogan">The combination of culture and flavor</p>
+          </div>
+          <div class="search-container">
+            <label for="search">
+              <input
+                class="search-input"
+                type="text"
+                autocomplete="off"
+                id="search"
+                placeholder="Search...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </label>
+            <ul class="menu-filter-nav">
+              <li data-filter="all" class="filter-link active">All</li>
+              <li data-filter="taco" class="filter-link">Tacos</li>
+              <li data-filter="burr" class="filter-link">Burritos</li>
+              <li data-filter="ques" class="filter-link">Quesadillas</li>
+            </ul>
+          </div>
+          <!-- Menu Grid -->
+           <div class="menu-grid">
+            <div class="menu-card" data-item="taco" data-open="taco-1">
+              <div class="card-body">
+                <img src="assets/imgs/tacos-asada.jpg" alt="Tacos Carne Asada">
+                <div class="card-popup-box">
+                  <div>Tacos</div>
+                  <h3>Carne Asada</h3>
+                </div>
+              </div>
+            </div>
+           </div>
 
-      <section class="hero-section" id="tab-shows"></section>
+        </section>
+       </main>
 
-      <section class="hero-section" id="tab-merch"></section>
 
       <!-- Footer -->
-      <footer class="footer">
+      <!-- <footer class="footer">
         <a href="mailto:zephyrkensei@gmail.com" class="footer__link"
           >zephyrkensei@gmail.com</a
         >
@@ -101,7 +133,7 @@
             </a>
           </li>
         </ul>
-      </footer>
+      </footer> -->
     </div>
     <script src="/app.js" type="module"></script>
   </body>

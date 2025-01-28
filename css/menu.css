@@ -188,6 +188,7 @@ body {
   position: relative;
   margin: 0 1rem 1.85rem;
   max-width: 255px;
+  user-select: none;
 }
 
 .card-body img {
@@ -197,7 +198,8 @@ body {
   border-radius: 8px;
 }
 
-.card-popup-box h3 {
+.card-popup-box h3,
+.text-wrapper h3 {
   color: var(--color-secondary);
   font-size: 0.8125rem;
   line-height: 1.63;
@@ -283,7 +285,6 @@ body {
 
 .modal-dialog {
   max-width: 800px;
-  max-height: 50vh;
   background: var(--color-light);
   overflow: hidden;
   padding: 1.25rem 1.85rem;
@@ -298,7 +299,7 @@ body {
 .modal-header {
   display: flex;
   padding-bottom: 1rem;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .modal-header .fa-times {
@@ -333,11 +334,12 @@ body {
   width: 100%;
   border-radius: 8px;
   object-fit: cover;
-  height: 200px;
+  height: 240px;
 }
 
-.text-wrapper > strong {
-  margin: 0;
+.text-wrapper h3 {
+  font-size: var(--size18);
+  padding: 0;
 }
 
 [data-animation="slideInOutTop"] .modal-dialog {
@@ -351,7 +353,7 @@ body {
 }
 
 [data-animation="slideInOutTop"] .modal-dialog {
-  transform: translateY(-100%);
+  transform: translateY(-10%);
 }
 
 [data-animation="zoomInOut"].is-visible,

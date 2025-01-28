@@ -342,7 +342,7 @@ body {
   padding: 0;
 }
 
-[data-animation="slideInOutTop"] .modal-dialog {
+[data-animation="slideInOutTop"].modal-dialog {
   opacity: 0;
   transition: all 0.5s;
 }
@@ -352,7 +352,7 @@ body {
   transition-delay: 0.2s;
 }
 
-[data-animation="slideInOutTop"] .modal-dialog {
+[data-animation="slideInOutTop"].modal-dialog {
   transform: translateY(-10%);
 }
 

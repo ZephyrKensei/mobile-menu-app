@@ -173,7 +173,7 @@ body {
 }
 
 .menu-filter-nav .filter-link.active {
-  color: var(--color-accent1);
+  color: var(--color-accent2);
 }
 
 /* Grid & Cards */
@@ -197,24 +197,42 @@ body {
   border-radius: 8px;
 }
 
-.card-popup-box div {
+.card-popup-box h3 {
   color: var(--color-secondary);
   font-size: 0.8125rem;
   line-height: 1.63;
   letter-spacing: 1.63px;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  margin: 0;
   font-weight: 700;
-  text-transform: uppercase;
   pointer-events: none;
+  text-transform: uppercase;
 }
 
-.card-popup-box h3 {
-  pointer-events: none;
+.card-popup-box .tap {
   color: var(--color-secondary);
-  font-size: 1.3125rem;
   letter-spacing: -0.5px;
-  font-weight: 700;
-  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.tap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tap-flex {
+  display: flex;
+  align-items: center;
+}
+.tap p {
+  margin: 0;
+}
+.tap p:nth-child(2) {
+  text-decoration: underline;
+}
+.tap .fa-circle {
+  font-size: 5px;
+  padding: 0 10px;
 }
 
 .card-popup-box {
@@ -286,7 +304,7 @@ body {
 .modal-header .fa-times {
   font-size: 1.5rem;
   transition: all 0.5s ease-in;
-  color: var(--color-accent1);
+  color: var(--color-dark);
 }
 
 .modal-header .fa-times:hover {

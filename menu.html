@@ -23,447 +23,446 @@
     <!-- Title -->
     <title></title>
   </head>
-  <body>
-      <!-- Nav -->
-      <header class="header" id="header">
-        <button class="nav-toggle" aria-label="toggle navigation">
-          <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#all" class="nav__link">All</a>
-            </li>
-            <li class="nav__item">
-              <a href="#tacos" class="nav__link">Tacos</a>
-            </li>
-            <li class="nav__item">
-              <a href="#burritos" class="nav__link">Burritos</a>
-            </li>
-            <li class="nav__item">
-              <a href="#quesadillas" class="nav__link">Quesadillas</a>
-            </li>
+  <main>
+    <!-- Nav -->
+    <header class="header" id="header">
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#all" class="nav__link">All</a>
+          </li>
+          <li class="nav__item">
+            <a href="#tacos" class="nav__link">Tacos</a>
+          </li>
+          <li class="nav__item">
+            <a href="#burritos" class="nav__link">Burritos</a>
+          </li>
+          <li class="nav__item">
+            <a href="#quesadillas" class="nav__link">Quesadillas</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Menu -->
+    <div class="site-wrapper">
+      <!-- Menu Search & Nav -->
+      <section class="menu">
+        <div class="menu-title">
+          <img src="assets/imgs/logo.png" alt="logo" class="logo" />
+          <h2 class="menu-name">Menu</h2>
+        </div>
+        <div class="search-container">
+          <label for="search">
+            <input
+              class="search-input"
+              type="text"
+              autocomplete="off"
+              id="search"
+              placeholder="Search...">
+              <i class="fa-solid fa-magnifying-glass"></i>
+          </label>
+          <ul class="menu-filter-nav">
+            <li data-filter="all" class="filter-link active">All</li>
+            <li data-filter="taco" class="filter-link">Tacos</li>
+            <li data-filter="burr" class="filter-link">Burritos</li>
+            <li data-filter="ques" class="filter-link">Quesadillas</li>
+            <li data-filter="torta" class="filter-link">Tortas</li>
           </ul>
-        </nav>
-      </header>
-
-      <!-- Menu -->
-       <main class="site-wrapper">
-        <!-- Menu Search & Nav -->
-        <section class="menu">
-          <div class="menu-title">
-            <img src="assets/imgs/logo.png" alt="logo" class="logo" />
-            <h2 class="menu-name">Menu</h2>
-          </div>
-          <div class="search-container">
-            <label for="search">
-              <input
-                class="search-input"
-                type="text"
-                autocomplete="off"
-                id="search"
-                placeholder="Search...">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </label>
-            <ul class="menu-filter-nav">
-              <li data-filter="all" class="filter-link active">All</li>
-              <li data-filter="taco" class="filter-link">Tacos</li>
-              <li data-filter="burr" class="filter-link">Burritos</li>
-              <li data-filter="ques" class="filter-link">Quesadillas</li>
-              <li data-filter="torta" class="filter-link">Tortas</li>
-            </ul>
-          </div>
-          <!-- Menu Grid -->
-           <div class="menu-grid">
-            <!-- Taco Cards -->
-            <div class="menu-card" data-item="taco" data-open="taco-1">
-              <div class="card-body">
-                <img src="assets/imgs/tacos-asada.jpg" alt="carne asada tacos">
-                <div class="card-popup-box">
-                  <h3>Carne Asada</h3>
-                  <div class="tap">
-                    <div class="tap-flex">
-                      <p>$10</p>
-                      <i class="fa-solid fa-circle"></i>
-                      <p>10 mins</p>
-                    </div>
-                    <p>Details</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="menu-card" data-item="taco" data-open="taco-2">
-              <div class="card-body">
-                <img src="assets/imgs/tacos-pastor.jpg" alt="pastor tacos">
-                <div class="card-popup-box">
-                  <h3>Pastor</h3>
-                  <div class="tap">
-                    <div class="tap-flex">
-                      <p>$10</p>
-                      <i class="fa-solid fa-circle"></i>
-                      <p>10 mins</p>
-                    </div>
-                    <p>Details</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Burrito Cards -->
-            <div class="menu-card" data-item="burr" data-open="burr-1">
-              <div class="card-body">
-                <img src="assets/imgs/burrito-barb.jpg" alt="barbacoa burrito">
-                <div class="card-popup-box">
-                  <h3>Barbacoa</h3>
-                  <div class="tap">
-                    <div class="tap-flex">
-                      <p>$10</p>
-                      <i class="fa-solid fa-circle"></i>
-                      <p>10 mins</p>
-                    </div>
-                    <p>Details</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="menu-card" data-item="burr" data-open="burr-2">
-              <div class="card-body">
-                <img src="assets/imgs/burrito-carnita.jpg" alt="carnita burrito">
-                <div class="card-popup-box">
-                  <h3>Carnita</h3>
-                  <div class="tap">
-                    <div class="tap-flex">
-                      <p>$10</p>
-                      <i class="fa-solid fa-circle"></i>
-                      <p>10 mins</p>
-                    </div>
-                    <p>Details</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="menu-card" data-item="burr" data-open="burr-3">
-              <div class="card-body">
-                <img src="assets/imgs/burrito-chicken.jpg" alt="chicken burrito">
-                <div class="card-popup-box">
-                  <h3>Chicken</h3>
-                  <div class="tap">
-                    <div class="tap-flex">
-                      <p>$10</p>
-                      <i class="fa-solid fa-circle"></i>
-                      <p>10 mins</p>
-                    </div>
-                    <p>Details</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Quesadillas Cards -->
-            <div class="menu-card" data-item="ques" data-open="ques-1">
-              <div class="card-body">
-                <img src="assets/imgs/quesa.jpg" alt="chicken quesadillas">
-                <div class="card-popup-box">
-                  <h3>Chicken</h3>
-                  <div class="tap">
-                    <div class="tap-flex">
-                      <p>$10</p>
-                      <i class="fa-solid fa-circle"></i>
-                      <p>10 mins</p>
-                    </div>
-                    <p>Details</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="menu-card" data-item="ques" data-open="ques-2">
-              <div class="card-body">
-                <img src="assets/imgs/quesa-vegeta.jpg" alt="vegetarian quesadillas">
-                <div class="card-popup-box">
-                  <h3>Vegetarian</h3>
-                  <div class="tap">
-                    <div class="tap-flex">
-                      <p>$10</p>
-                      <i class="fa-solid fa-circle"></i>
-                      <p>10 mins</p>
-                    </div>
-                    <p>Details</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-           
-            <!-- Torta Cards -->
-            <div class="menu-card" data-item="torta" data-open="torta-1">
-              <div class="card-body">
-                <img src="assets/imgs/torta-chor.jpg" alt="chorizo torta">
-                <div class="card-popup-box">
-                  <h3>Chorizo</h3>
-                  <div class="tap">
-                    <div class="tap-flex">
-                      <p>$10</p>
-                      <i class="fa-solid fa-circle"></i>
-                      <p>10 mins</p>
-                    </div>
-                    <p>Details</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="menu-card" data-item="torta" data-open="torta-2">
-              <div class="card-body">
-                <img src="assets/imgs/torta-pork.jpg" alt="pork torta">
-                <div class="card-popup-box">
-                  <h3>Pork</h3>
-                  <div class="tap">
-                    <div class="tap-flex">
-                      <p>$10</p>
-                      <i class="fa-solid fa-circle"></i>
-                      <p>10 mins</p>
-                    </div>
-                    <p>Details</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="menu-card" data-item="torta" data-open="torta-3">
-              <div class="card-body">
-                <img src="assets/imgs/torta-hNc.jpg" alt="ham and cheese torta">
-                <div class="card-popup-box">
-                  <h3>Ham & Cheese</h3>
-                  <div class="tap">
-                    <div class="tap-flex">
-                      <p>$10</p>
-                      <i class="fa-solid fa-circle"></i>
-                      <p>10 mins</p>
-                    </div>
-                    <p>Details</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-           </div>
-        </section>
-
-        <!-- Popup Modals -->
-        <div id="taco-1" class="modal" data-animation="slideInOutTop">
-          <div class="modal-dialog">
-            <header class="modal-header">
-              <i class="fas fa-times" data-close=""></i>
-            </header>
-            <div class="modal-body">
-              <div class="img-wrapper">
-                <img src="assets/imgs/tacos-asada.jpg" alt="carne asada tacos">
-              </div>
-              <div class="text-wrapper">
+        </div>
+        <!-- Menu Grid -->
+          <div class="menu-grid">
+          <!-- Taco Cards -->
+          <div class="menu-card" data-item="taco" data-open="taco-1">
+            <div class="card-body">
+              <img src="assets/imgs/tacos-asada.jpg" alt="carne asada tacos">
+              <div class="card-popup-box">
                 <h3>Carne Asada</h3>
-                <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
-                <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+                <div class="tap">
+                  <div class="tap-flex">
+                    <p>$10</p>
+                    <i class="fa-solid fa-circle"></i>
+                    <p>10 mins</p>
+                  </div>
+                  <p>Details</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div id="taco-2" class="modal" data-animation="slideInOutTop">
-          <div class="modal-dialog">
-            <header class="modal-header">
-              <i class="fas fa-times" data-close=""></i>
-            </header>
-            <div class="modal-body">
-              <div class="img-wrapper">
-                <img src="assets/imgs/tacos-asada.jpg" alt="pastor tacos">
-              </div>
-              <div class="text-wrapper">
+          <div class="menu-card" data-item="taco" data-open="taco-2">
+            <div class="card-body">
+              <img src="assets/imgs/tacos-pastor.jpg" alt="pastor tacos">
+              <div class="card-popup-box">
                 <h3>Pastor</h3>
-                <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
-                <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+                <div class="tap">
+                  <div class="tap-flex">
+                    <p>$10</p>
+                    <i class="fa-solid fa-circle"></i>
+                    <p>10 mins</p>
+                  </div>
+                  <p>Details</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div id="burr-1" class="modal" data-animation="slideInOutTop">
-          <div class="modal-dialog">
-            <header class="modal-header">
-              <i class="fas fa-times" data-close=""></i>
-            </header>
-            <div class="modal-body">
-              <div class="img-wrapper">
-                <img src="assets/imgs/tacos-asada.jpg" alt="barbacoa burrito">
-              </div>
-              <div class="text-wrapper">
+          <!-- Burrito Cards -->
+          <div class="menu-card" data-item="burr" data-open="burr-1">
+            <div class="card-body">
+              <img src="assets/imgs/burrito-barb.jpg" alt="barbacoa burrito">
+              <div class="card-popup-box">
                 <h3>Barbacoa</h3>
-                <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
-                <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+                <div class="tap">
+                  <div class="tap-flex">
+                    <p>$10</p>
+                    <i class="fa-solid fa-circle"></i>
+                    <p>10 mins</p>
+                  </div>
+                  <p>Details</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div id="burr-2" class="modal" data-animation="slideInOutTop">
-          <div class="modal-dialog">
-            <header class="modal-header">
-              <i class="fas fa-times" data-close=""></i>
-            </header>
-            <div class="modal-body">
-              <div class="img-wrapper">
-                <img src="assets/imgs/tacos-asada.jpg" alt="carnita burrito">
-              </div>
-              <div class="text-wrapper">
+          <div class="menu-card" data-item="burr" data-open="burr-2">
+            <div class="card-body">
+              <img src="assets/imgs/burrito-carnita.jpg" alt="carnita burrito">
+              <div class="card-popup-box">
                 <h3>Carnita</h3>
-                <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
-                <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+                <div class="tap">
+                  <div class="tap-flex">
+                    <p>$10</p>
+                    <i class="fa-solid fa-circle"></i>
+                    <p>10 mins</p>
+                  </div>
+                  <p>Details</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div id="burr-3" class="modal" data-animation="slideInOutTop">
-          <div class="modal-dialog">
-            <header class="modal-header">
-              <i class="fas fa-times" data-close=""></i>
-            </header>
-            <div class="modal-body">
-              <div class="img-wrapper">
-                <img src="assets/imgs/tacos-asada.jpg" alt="chicken burrito">
-              </div>
-              <div class="text-wrapper">
+          <div class="menu-card" data-item="burr" data-open="burr-3">
+            <div class="card-body">
+              <img src="assets/imgs/burrito-chicken.jpg" alt="chicken burrito">
+              <div class="card-popup-box">
                 <h3>Chicken</h3>
-                <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
-                <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+                <div class="tap">
+                  <div class="tap-flex">
+                    <p>$10</p>
+                    <i class="fa-solid fa-circle"></i>
+                    <p>10 mins</p>
+                  </div>
+                  <p>Details</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div id="ques-1" class="modal" data-animation="slideInOutTop">
-          <div class="modal-dialog">
-            <header class="modal-header">
-              <i class="fas fa-times" data-close=""></i>
-            </header>
-            <div class="modal-body">
-              <div class="img-wrapper">
-                <img src="assets/imgs/quesa.jpg" alt="chicken quesadillas">
-              </div>
-              <div class="text-wrapper">
+          
+          <!-- Quesadillas Cards -->
+          <div class="menu-card" data-item="ques" data-open="ques-1">
+            <div class="card-body">
+              <img src="assets/imgs/quesa.jpg" alt="chicken quesadillas">
+              <div class="card-popup-box">
                 <h3>Chicken</h3>
-                <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
-                <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+                <div class="tap">
+                  <div class="tap-flex">
+                    <p>$10</p>
+                    <i class="fa-solid fa-circle"></i>
+                    <p>10 mins</p>
+                  </div>
+                  <p>Details</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div id="ques-2" class="modal" data-animation="slideInOutTop">
-          <div class="modal-dialog">
-            <header class="modal-header">
-              <i class="fas fa-times" data-close=""></i>
-            </header>
-            <div class="modal-body">
-              <div class="img-wrapper">
-                <img src="assets/imgs/quesa-vegeta.jpg" alt="vegetarian quesadillas">
-              </div>
-              <div class="text-wrapper">
+          <div class="menu-card" data-item="ques" data-open="ques-2">
+            <div class="card-body">
+              <img src="assets/imgs/quesa-vegeta.jpg" alt="vegetarian quesadillas">
+              <div class="card-popup-box">
                 <h3>Vegetarian</h3>
-                <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
-                <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+                <div class="tap">
+                  <div class="tap-flex">
+                    <p>$10</p>
+                    <i class="fa-solid fa-circle"></i>
+                    <p>10 mins</p>
+                  </div>
+                  <p>Details</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div id="torta-1" class="modal" data-animation="slideInOutTop">
-          <div class="modal-dialog">
-            <header class="modal-header">
-              <i class="fas fa-times" data-close=""></i>
-            </header>
-            <div class="modal-body">
-              <div class="img-wrapper">
-                <img src="assets/imgs/torta-chor.jpg" alt="chorizo torta">
-              </div>
-              <div class="text-wrapper">
+          
+          <!-- Torta Cards -->
+          <div class="menu-card" data-item="torta" data-open="torta-1">
+            <div class="card-body">
+              <img src="assets/imgs/torta-chor.jpg" alt="chorizo torta">
+              <div class="card-popup-box">
                 <h3>Chorizo</h3>
-                <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
-                <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+                <div class="tap">
+                  <div class="tap-flex">
+                    <p>$10</p>
+                    <i class="fa-solid fa-circle"></i>
+                    <p>10 mins</p>
+                  </div>
+                  <p>Details</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div id="torta-2" class="modal" data-animation="slideInOutTop">
-          <div class="modal-dialog">
-            <header class="modal-header">
-              <i class="fas fa-times" data-close=""></i>
-            </header>
-            <div class="modal-body">
-              <div class="img-wrapper">
-                <img src="assets/imgs/torta-pork.jpg" alt="pork torta">
-              </div>
-              <div class="text-wrapper">
+          <div class="menu-card" data-item="torta" data-open="torta-2">
+            <div class="card-body">
+              <img src="assets/imgs/torta-pork.jpg" alt="pork torta">
+              <div class="card-popup-box">
                 <h3>Pork</h3>
-                <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
-                <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+                <div class="tap">
+                  <div class="tap-flex">
+                    <p>$10</p>
+                    <i class="fa-solid fa-circle"></i>
+                    <p>10 mins</p>
+                  </div>
+                  <p>Details</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div id="torta-3" class="modal" data-animation="slideInOutTop">
-          <div class="modal-dialog">
-            <header class="modal-header">
-              <i class="fas fa-times" data-close=""></i>
-            </header>
-            <div class="modal-body">
-              <div class="img-wrapper">
-                <img src="assets/imgs/torta-hNc.jpg" alt="ham and cheese torta">
-              </div>
-              <div class="text-wrapper">
+          <div class="menu-card" data-item="torta" data-open="torta-3">
+            <div class="card-body">
+              <img src="assets/imgs/torta-hNc.jpg" alt="ham and cheese torta">
+              <div class="card-popup-box">
                 <h3>Ham & Cheese</h3>
-                <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
-                <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+                <div class="tap">
+                  <div class="tap-flex">
+                    <p>$10</p>
+                    <i class="fa-solid fa-circle"></i>
+                    <p>10 mins</p>
+                  </div>
+                  <p>Details</p>
+                </div>
               </div>
             </div>
           </div>
+          
+          </div>
+      </section>
+
+      <!-- Popup Modals -->
+      <div id="taco-1" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <i class="fas fa-times" data-close=""></i>
+          </header>
+          <div class="modal-body">
+            <div class="img-wrapper">
+              <img src="assets/imgs/tacos-asada.jpg" alt="carne asada tacos">
+            </div>
+            <div class="text-wrapper">
+              <h3>Carne Asada</h3>
+              <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+              <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+            </div>
+          </div>
         </div>
-       </main>
-
-
+      </div>
+      <div id="taco-2" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <i class="fas fa-times" data-close=""></i>
+          </header>
+          <div class="modal-body">
+            <div class="img-wrapper">
+              <img src="assets/imgs/tacos-asada.jpg" alt="pastor tacos">
+            </div>
+            <div class="text-wrapper">
+              <h3>Pastor</h3>
+              <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+              <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="burr-1" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <i class="fas fa-times" data-close=""></i>
+          </header>
+          <div class="modal-body">
+            <div class="img-wrapper">
+              <img src="assets/imgs/tacos-asada.jpg" alt="barbacoa burrito">
+            </div>
+            <div class="text-wrapper">
+              <h3>Barbacoa</h3>
+              <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+              <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="burr-2" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <i class="fas fa-times" data-close=""></i>
+          </header>
+          <div class="modal-body">
+            <div class="img-wrapper">
+              <img src="assets/imgs/tacos-asada.jpg" alt="carnita burrito">
+            </div>
+            <div class="text-wrapper">
+              <h3>Carnita</h3>
+              <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+              <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="burr-3" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <i class="fas fa-times" data-close=""></i>
+          </header>
+          <div class="modal-body">
+            <div class="img-wrapper">
+              <img src="assets/imgs/tacos-asada.jpg" alt="chicken burrito">
+            </div>
+            <div class="text-wrapper">
+              <h3>Chicken</h3>
+              <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+              <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="ques-1" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <i class="fas fa-times" data-close=""></i>
+          </header>
+          <div class="modal-body">
+            <div class="img-wrapper">
+              <img src="assets/imgs/quesa.jpg" alt="chicken quesadillas">
+            </div>
+            <div class="text-wrapper">
+              <h3>Chicken</h3>
+              <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+              <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="ques-2" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <i class="fas fa-times" data-close=""></i>
+          </header>
+          <div class="modal-body">
+            <div class="img-wrapper">
+              <img src="assets/imgs/quesa-vegeta.jpg" alt="vegetarian quesadillas">
+            </div>
+            <div class="text-wrapper">
+              <h3>Vegetarian</h3>
+              <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+              <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="torta-1" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <i class="fas fa-times" data-close=""></i>
+          </header>
+          <div class="modal-body">
+            <div class="img-wrapper">
+              <img src="assets/imgs/torta-chor.jpg" alt="chorizo torta">
+            </div>
+            <div class="text-wrapper">
+              <h3>Chorizo</h3>
+              <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+              <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="torta-2" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <i class="fas fa-times" data-close=""></i>
+          </header>
+          <div class="modal-body">
+            <div class="img-wrapper">
+              <img src="assets/imgs/torta-pork.jpg" alt="pork torta">
+            </div>
+            <div class="text-wrapper">
+              <h3>Pork</h3>
+              <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+              <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="torta-3" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <i class="fas fa-times" data-close=""></i>
+          </header>
+          <div class="modal-body">
+            <div class="img-wrapper">
+              <img src="assets/imgs/torta-hNc.jpg" alt="ham and cheese torta">
+            </div>
+            <div class="text-wrapper">
+              <h3>Ham & Cheese</h3>
+              <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+              <p>Nuhor lir gurenna. Skorī demalyti tymptir tymis, erinis ia morghulis. Valar morghulis. Sikudi nopazmi! Tubi daor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
       <!-- Footer -->
-      <!-- <footer class="footer">
+      <footer class="footer">
         <a href="mailto:zephyrkensei@gmail.com" class="footer__link"
           >zephyrkensei@gmail.com</a
         >
-        <ul class="footer-list">
-          <li class="footer-list__item">
+        <ul class="social-list">
+          <li class="social-list__item">
             <a
-              class="footer-list__link"
-              href="https://codepen.io/ZephyrKensei"
+              class="social-list__link"
+              href="https://zephyr-portfolio.netlify.app/"
               target="_blank"
             >
-              <i class="fa-brands fa-codepen"></i>
+              <i class="fa-solid fa-dragon"></i>
             </a>
           </li>
-          <li class="footer-list__item">
+          <li class="social-list__item">
             <a
-              class="footer-list__link"
-              href="https://twitter.com/ZephyrKensei"
-              target="_blank"
-            >
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-          </li>
-          <li class="footer-list__item">
-            <a
-              class="footer-list__link"
-              href="https://github.com/ZephyrKensei"
-              target="_blank"
-            >
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </li>
-          <li class="footer-list__item">
-            <a
-              class="footer-list__link"
+              class="social-list__link"
               href="https://www.linkedin.com/in/zephyrkensei/"
               target="_blank"
             >
               <i class="fa-brands fa-linkedin"></i>
             </a>
           </li>
+          <li class="social-list__item">
+            <a
+              class="social-list__link"
+              href="https://twitter.com/ZephyrKensei"
+              target="_blank"
+            >
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a
+              class="social-list__link"
+              href="https://github.com/ZephyrKensei"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
         </ul>
-      </footer> -->
+      </footer>
     </div>
+    </main>
     <script src="/main.js" type="module"></script>
   </body>
 </html>

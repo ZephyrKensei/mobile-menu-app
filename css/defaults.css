@@ -125,6 +125,44 @@ h4 {
   font-size: var(--fs-h4);
 }
 
+/* Footer */
+.footer {
+  background: var(--color-light);
+  color: var(--color-secondary);
+  text-align: center;
+  padding: 0.75em 0;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__link:hover,
+.social-list__link:hover {
+  opacity: 0.7;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.social-list__item {
+  margin: 0 0.5em;
+}
+
+.social-list__link {
+  padding: 0.5em;
+}
+
 @media screen and (max-width: 480px) {
 }
 

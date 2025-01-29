@@ -16,6 +16,21 @@ const searchBox = document.querySelector('#search');
 const openModal = document.querySelectorAll(modalOpen);
 const closeModal = document.querySelectorAll(modalClose);
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if(entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  })
+});
+
+const hiddenElm = document.querySelectorAll('.hidden');
+hiddenElm.forEach((el) => observer.observe(el));
+
+
+// Search
 searchBox.addEventListener('keyup', (e) => {
   const searchInput = e.target.value.toLowerCase().trim();
 

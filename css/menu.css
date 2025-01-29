@@ -323,13 +323,9 @@ body {
 
 .modal-body {
   display: flex;
+  flex-direction: column;
   align-items: center;
   color: var(--color-dark);
-}
-
-.modal-body .img-wrapper {
-  max-width: 200px;
-  margin-right: 0.75rem;
 }
 
 .img-wrapper img {
@@ -339,9 +335,19 @@ body {
   height: 240px;
 }
 
+.text-wrapper {
+  border: 1px solid var(--color-secondary);
+  margin: 10px auto;
+  padding: 5px;
+}
+
 .text-wrapper h3 {
   font-size: var(--size18);
   padding: 0;
+}
+.text-wrapper h4 {
+  margin-bottom: -17px;
+  text-decoration: underline;
 }
 
 [data-animation="slideInOutTop"].modal-dialog {
@@ -361,4 +367,13 @@ body {
 [data-animation="zoomInOut"].is-visible,
 [data-animation="slideInOutTop"].is-visible .modal-dialog {
   transform: none;
+}
+
+/* Animation */
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
 }

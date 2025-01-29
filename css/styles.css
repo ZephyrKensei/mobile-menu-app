@@ -9,8 +9,8 @@
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 3rem;
+  height: 3rem;
   margin: auto;
 }
 
@@ -18,7 +18,7 @@
   font-family: var(--ff-prim);
   font-size: var(--fs-h1);
   text-transform: uppercase;
-  margin: 12px auto;
+  margin: 0.8rem auto;
 }
 
 .hero {
@@ -56,7 +56,7 @@
   right: 0;
   margin: auto;
   max-width: 150px;
-  border-radius: 30px;
+  border-radius: var(--size30);
 }
 
 /* header */

@@ -100,6 +100,12 @@ a {
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
 }
+.btn:visited {
+  color: var(--color-dark);
+}
+.btn:active {
+  color: var(--color-dark);
+}
 
 /* Typography */
 h1,

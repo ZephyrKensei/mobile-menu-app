@@ -16,6 +16,21 @@ const searchBox = document.querySelector('#search');
 const openModal = document.querySelectorAll(modalOpen);
 const closeModal = document.querySelectorAll(modalClose);
 
+// Mobile Nav
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelectorAll('.nav__list')
+
+navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+});
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        document.body.classList.remove('nav-open');
+    })
+})
+
+// Animation
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if(entry.isIntersecting) {
@@ -25,7 +40,6 @@ const observer = new IntersectionObserver((entries) => {
     }
   })
 });
-
 const hiddenElm = document.querySelectorAll('.hidden');
 hiddenElm.forEach((el) => observer.observe(el));
 

@@ -168,12 +168,3 @@ h4 {
 .social-list__link {
   padding: 0.5em;
 }
-
-@media screen and (max-width: 480px) {
-}
-
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 992px) {
-}
